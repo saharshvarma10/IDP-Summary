@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shadow Squad — Impact of Poverty & Inequality</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#94a3b8; --accent:#38bdf8;
+      --glass: rgba(255,255,255,0.05);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; background:linear-gradient(180deg,#071026 0%, #0f1724 100%);color:#e6eef6}
+    nav{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:1200;background:rgba(0,0,0,0.4);backdrop-filter:blur(6px);padding:10px 18px;border-radius:999px;display:flex;gap:18px;align-items:center}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px;padding:6px 10px;border-radius:8px}
+    nav a:hover{background:var(--glass);color:#fff}
+    .container{scroll-behavior:smooth}
+    section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 20px}
+    .card{max-width:980px;width:100%;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:14px;padding:36px;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    h1{font-size:28px;margin:0 0 10px}
+    h2{font-size:20px;margin:0 0 12px;color:var(--accent)}
+    p{color:#d8e7f6;line-height:1.6;margin:0 0 12px}
+    .lead{font-size:18px;color:#dff6ff}
+    .small{font-size:14px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:16px}
+    .box{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+    footer{padding:24px;text-align:center;color:var(--muted)}
+    /* animations */
+    section{opacity:0;transform:translateY(28px);transition:opacity .9s ease, transform .9s ease}
+    section.visible{opacity:1;transform:none}
+    /* anchors spacing */
+    .anchor{position:relative;top:-74px}
+    /* reflections style */
+    .name{font-weight:700;color:#fff;margin-bottom:6px}
+    @media(max-width:600px){h1{font-size:20px}.card{padding:22px}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#poverty">No Poverty</a>
+    <a href="#hunger">Zero Hunger</a>
+    <a href="#inequality">Reduced Inequality</a>
+    <a href="#global">Global View</a>
+    <a href="#reflections">Reflections</a>
+    <a href="#action">Action Plan</a>
+    <a href="#thankyou">Thank You</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="intro">
+      <div class="card">
+        <div class="anchor" id="top"></div>
+        <h1>The Impact of Poverty & Inequality on Health, Nutrition, and Child Growth</h1>
+        <p class="lead">Shadow Squad — a student team (Saharsh, Dhakshana, Waqar, Ira) researched how poverty and inequality influence health, nutrition, and the growth of children. This summary website presents key findings, the SDG links (No Poverty, Zero Hunger, Reduced Inequalities), global examples, and our team reflections and action plan.</p>
+        <p class="small">Scroll down or use the menu above to navigate sections. Designed as a concise summary for presentation and sharing.</p>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="card">
+        <h2>Why we chose this topic</h2>
+        <p>Poverty and inequality remain among the world’s largest challenges. Many people lack basic needs — food, clean water, healthcare and education — while unequal resource distribution deepens the divide. Our team chose this topic to understand those effects on children and families and to highlight solutions aligned with the SDGs.</p>
+      </div>
+    </section>
+
+    <section id="poverty">
+      <div class="card">
+        <h2>No Poverty (SDG 1)</h2>
+        <p class="lead">Goal: End extreme poverty for all by 2030.</p>
+        <p>Poverty reduces access to healthcare, increases disease burden, and limits opportunities for growth. Millions still live on just a few dollars a day, with Sub‑Saharan Africa most affected. Poverty in childhood increases risk of stunting, chronic illness and life‑long disadvantages.</p>
+        <div class="grid">
+          <div class="box"><strong>Health:</strong> Limited healthcare access and higher mortality in poor communities.</div>
+          <div class="box"><strong>Nutrition:</strong> Insufficient diets lead to stunting and delays in development.</div>
+          <div class="box"><strong>Child Growth:</strong> Early disadvantages shape long‑term physical and cognitive outcomes.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hunger">
+      <div class="card">
+        <h2>Zero Hunger (SDG 2)</h2>
+        <p class="lead">Goal: End hunger, achieve food security and improved nutrition, and promote sustainable agriculture.</p>
+        <p>Hunger undermines learning, health and productivity. Childhood hunger has lasting physical and psychological consequences. Recent setbacks from the pandemic, conflict, and climate shocks have increased food insecurity globally — millions remain undernourished.</p>
+        <p class="small">Key challenges include rising food prices, disrupted supply chains, and weakened agricultural investment in fragile regions.</p>
+      </div>
+    </section>
+
+    <section id="inequality">
+      <div class="card">
+        <h2>Reduced Inequality (SDG 10)</h2>
+        <p class="lead">Goal: Reduce inequality within and among countries by improving social, economic and political inclusion.</p>
+        <p>Inequality concentrates wealth and opportunity with a few while many are left behind. This affects health and nutrition by limiting access to services for marginalized groups. Addressing inequality includes social protection, disability inclusion, and pro‑poor economic policies.</p>
+      </div>
+    </section>
+
+    <section id="global">
+      <div class="card">
+        <h2>Global Perspectives & Case Examples</h2>
+        <p>Different regions face distinct challenges: Sub‑Saharan Africa has high extreme poverty; South Sudan struggles with food insecurity; countries like India, China and Indonesia have shown notable poverty reduction. Canada, the USA and Australia demonstrate diverse national measures and ongoing gaps that require policy responses.</p>
+        <div class="grid">
+          <div class="box"><strong>Sub‑Saharan Africa:</strong> High rates of extreme poverty and limited services.</div>
+          <div class="box"><strong>South Sudan:</strong> Conflict and poor infrastructure worsen food insecurity.</div>
+          <div class="box"><strong>Progress Examples:</strong> Large poverty reductions recorded in India and China in recent decades.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ct">
+      <div class="card">
+        <h2>Computational Thinking — Applied to Poverty</h2>
+        <p>Computational thinking breaks complex problems into smaller parts, finds patterns, and builds step‑by‑step solutions. Applied to poverty, it helps identify root causes (education, health, employment), prioritize interventions, model outcomes and design scalable programs such as skills training, targeted social protection, and data‑driven monitoring.</p>
+      </div>
+    </section>
+
+    <section id="reflections">
+      <div class="card">
+        <h2>Team Reflections</h2>
+        <div class="grid">
+          <div class="box">
+            <div class="name">Saharsh — Leader</div>
+            <p>I guided the team, coordinated research and shaped the final message. Leading this project taught me how to balance tasks, encourage teammates, and ensure quality. I’m proud of our teamwork and the learning gained about global inequality.</p>
+          </div>
+
+          <div class="box">
+            <div class="name">Dhakshana — Co‑Leader</div>
+            <p>Working closely with the leader, I helped research and refine ideas. The role improved my planning and collaboration skills. I learned that addressing poverty needs empathy, creativity and clear communication.</p>
+          </div>
+
+          <div class="box">
+            <div class="name">Waqar — Editor</div>
+            <p>I edited and polished our content, focusing on clarity and accuracy. Through reviewing drafts I learned the importance of structure and attention to detail to make our message strong and professional.</p>
+          </div>
+
+          <div class="box">
+            <div class="name">Ira — Organizer</div>
+            <p>I coordinated tasks and compiled our work to keep the team on schedule. The experience strengthened my organizational skills and showed how good communication keeps a project running smoothly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="action">
+      <div class="card">
+        <h2>Action Plan</h2>
+        <p>Our action plan split responsibilities clearly so we could progress efficiently:</p>
+        <ul class="small">
+          <li><strong>Leader & Co‑Leader:</strong> Brainstorming, research, drafting, and final review.</li>
+          <li><strong>Editor:</strong> Review, corrections and polishing of drafts.</li>
+          <li><strong>Organizer:</strong> Task coordination, compilation and documentation.</li>
+          <li><strong>Team:</strong> Final rehearsals and presentation delivery together.</li>
+        </ul>
+        <p class="small">This structure ensured clear roles, steady progress and a successful submission and presentation.</p>
+      </div>
+    </section>
+
+    <section id="thankyou">
+      <div class="card">
+        <h1>Thank You</h1>
+        <p class="lead">— Team Shadow Squad</p>
+        <p class="small">Prepared by Saharsh (Leader), Dhakshana (Co‑Leader), Waqar (Editor), Ira (Organizer).</p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="small">Made with ❤️ by Shadow Squad • Summary website from the IDP presentation</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Intersection observer to reveal sections
+    const secs = document.querySelectorAll('section');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, {threshold:0.18});
+    secs.forEach(s=>io.observe(s));
+
+    // Smooth scroll offset for fixed nav (for some browsers)
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(!el) return;
+        const y = el.getBoundingClientRect().top + window.scrollY - 72;
+        window.scrollTo({top:y, behavior:'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
